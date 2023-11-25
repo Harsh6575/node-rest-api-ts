@@ -43,3 +43,18 @@ Running commands with npm `npm run [command]`
 | command         | description                              |
 | :-------------- | :--------------------------------------- |
 | `start`         | Starts a development instance of the app |
+
+## Api Test AUTH (POST REQ)
+
+| api         |input                              |
+| :-------------- | :--------------------------------------- |
+| `http://localhost:8080/auth/register`         | { "email": "dummy@gmail.com", "username":"Dummy", "password":"HPpatel" } |
+| `http://localhost:8080/auth/login`         | { "email": "dummy@gmail.com", "password":"HPpatel" } |
+
+## Api Test USERS
+
+| api         |req type                              | data |
+| :-------------- | :--------------------------------------- |:---|
+| `http://localhost:8080/users`         | GET |
+| `http://localhost:8080/users/[id]`         | DELETE |
+| `http://localhost:8080/users/[id]`         | PATCH |  {"username": "MODIFIEDHARSH"}|
